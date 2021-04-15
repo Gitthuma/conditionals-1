@@ -33,8 +33,12 @@
 
         /*Create a conditional that checks whether season contains the string "summer", and if so assigns a string to response that gives the user an appropriate message about the season. If not, it should assign a generic string to response that tells the user we don't know what season it is.*/
 
-        if (season) {
+        /*Add another test that checks whether season contains the string "winter", and again assigns an appropriate string to response.*/
+
+        if (season === "summer") {
             response = "Summer is the hottest of the four temperate seasons, falling after spring and before autumn.";
+        } else if (season === "winter") {
+            response = "Winter is the coldest season of the year in polar and temperate zones; it does not occur in most of the tropical zone.";
         } else {
             response = "Unknow season";
         }
